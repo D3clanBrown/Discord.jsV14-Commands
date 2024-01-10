@@ -17,9 +17,9 @@ module.exports = {
   async execute(interaction, client) {
     const {application, channels, emojis, guilds, uptime, user, ws} = client;
 
-    const commandCount = (application.commands.cache.size = 500);
-    const channelCount = channels.cache.size + 708;
-    const emojisCount = emojis.cache.size + 45;
+    const commandCount = (application.commands.cache.size);
+    const channelCount = channels.cache.size;
+    const emojisCount = emojis.cache.size;
     const guildsCount = guilds.cache.size;
     const user_Id = user.username + ' | ' + user.id;
     const ping = ws.ping;
